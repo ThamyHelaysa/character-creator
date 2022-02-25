@@ -9,5 +9,10 @@
 
 /* Mobile Styles */
 @media (max-width:992px){
-  .maxWidthWrapper {z-index: 1;}
+  .maxWidthWrapper {
+    height: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    z-index: 1;
+  }
 }

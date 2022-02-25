@@ -47,18 +47,23 @@
 /* Mobile Styles */
 @media (max-width:992px){
   .characterEditor {
-    height: 100%;
-    padding-top: 40px;
+    padding-top: 1rem;
     overflow: hidden;
   }
   .header {
+    max-width: 100%;
     padding: 1rem 2.25rem;
     background-color: white;
     border-radius: 8px;
   }
+  .title {font-size: 1.5rem;}
+  .description {font-size: .875rem;}
   .characterWrapper {
+    top: 30%;
     left: 0;
+    bottom: 0;
     width: 100%;
+    height: auto;
     text-align: center;
   }
   .controlColumn {
@@ -66,7 +71,11 @@
     overflow-x: auto;
     grid-auto-columns: calc(80% - 20px);
     grid-auto-flow: column;
+    gap: 20px;
+    scroll-snap-type: x mandatory;
     max-width: 100%;
-    align-self: end;
+    height: 90vh;
+    align-items: end;
+    align-self: center;
   }
 }
